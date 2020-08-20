@@ -45,7 +45,7 @@ $(function() {
         $.ajax({
             method: 'POST',
             url: '/api/login',
-            data: $(this).serislize(),
+            data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
                     return layer.msg(res.message);
